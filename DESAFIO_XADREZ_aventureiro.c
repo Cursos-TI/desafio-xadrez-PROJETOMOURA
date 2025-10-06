@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main (){
-    int bispo = 0, rainha = 0, cavalo;
-    int movimento_cavalo, movimento_torre = 5, movimento_bispo = 5, movimento_rainha = 8;
+    int cavalo;
+    int movimento_cavalo;
     
 
     printf("\n===============<<<Nivel Aventureiro>>>==========\n");
@@ -11,12 +11,11 @@ int main (){
     printf("                ==============\n");
 
     //Atribuído valores às variáveis MOVIMENTO_CAVALO e CAVALO;
-    //Utilizando a função loop Alinhado WHILE
     //O movimento do cavalo se da em forma de L, para tanto o movimento deve ser descrito com dois movimentos para BAIXO e um para ESQUERDA. 
   
     cavalo = 1;
     movimento_cavalo = 1; 
-  
+printf("\n========== Loop aninhado WHILE ==========\n");  
 while (cavalo < 2)
     {
         //O loop interno imprime "BAIXO" e incrementa o valor da variável MOVIMENTO_CAVALO enquanto esta for menor ou igual a 2 (dois).
@@ -34,10 +33,10 @@ while (cavalo < 2)
         printf("ESQUERDA\n"); 
         cavalo++;
     }
-      
-   printf("\n================================================\n");
+   printf("\nCAVALO de move em L para BAIXO/ESQUERDA\n");
 
-    //Loop Alinhado FOR 
+   printf("\n========== Loop aninhado FOR ==========\n");
+
     //foi criado as variáveis CAVALO e MOVIMENTO_CAVALO dentro da própria estrutura
     //a fim de demonstração desta possibilidade ao utilizar Loop Alinhado FOR.
     //Foi aplicada a mesma lógica do código anterior.
@@ -51,7 +50,9 @@ while (cavalo < 2)
         printf("ESQUERDA\n");
         
     }
+    printf("\nCAVALO de move em L para BAIXO/ESQUERDA\n");
 
+    printf("\n======= FIM ======\n");
 
     return 0;
 }
