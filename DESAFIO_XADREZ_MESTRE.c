@@ -35,42 +35,33 @@ int main (){
     
     printf("\n===============<<<Nivel Mestre>>>==========\n");
 
-    printf("                    ==<<TORRE>>==\n");
+    printf("\n     ==<<TORRE movimento recursivo>>==\n");
     
 
     moverTorre(5);
+    printf("\nA TORRE moveu 5 casas para DIREITA\n");
 
 //Para o movimento do Bispo utilizando a estrutura de Recursividade
 
    printf("\n===========================================\n");
 
-    printf("                    ==<<BISPO>>==\n");
+    printf("       ==<<BISPO movimento recursivo>>==\n");
 
 
    moverBispo(5);
-
-   printf("\n-------------------------------------------\n");
-
-//Segue o exemplo do mesmo movimento para o Bispo, porém utilizando um Lop Aninhado em FOR
-
-int bispo;
-
-   for(int bispo = 0; bispo < 5; bispo++)
-   {
-    for (int movimentoBispo = 1; movimentoBispo <= 1; movimentoBispo++)
-    {
-        printf("DIREITA\t");
-    }
-    printf("CIMA\n");
-   }
+   printf("\nA BISPO moveu 5 casas para DIAGONAL DIREITA/CIMA\n");
+   
  printf("\n===========================================\n");
- printf("                    ==<<RAINHA>>==\n");
+ 
+ printf("         ==<<RAINHA movimento recursivo>>==\n");
  
     
  moverRainha(8);
+ printf("\nA RAINHA moveu 8 casas para ESQUERDA\n");
+
 printf("\n===========================================\n");
 
-printf("                    ==<<CAVALO>>==\n");
+printf("     ==<<CAVALO movimento loop aninhado e complexo>>==\n");
 
     int i, j;
     
@@ -86,8 +77,10 @@ printf("                    ==<<CAVALO>>==\n");
     printf("DIREITA\n");
     break; //sai do loop externo
     }
-       
-    
+
+    printf("\nO CAVALO moveu em L para DIREITA/CIMA\n");
+
+printf("\n======= FIM ======\n");    
 
 
 return 0;

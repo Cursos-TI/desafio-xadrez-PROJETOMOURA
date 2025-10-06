@@ -21,9 +21,7 @@ int main (){
         printf("Cima\n");
        
      }
-    printf("A TORRE se descolou %d casas para CIMA\n", movimento_torre);
- 
-     
+        
     //Foi utilizado a função while para movimentação do BISPO
    
     printf("                =============\n");
@@ -37,10 +35,8 @@ int main (){
     bispo++;
     }
 
-    printf("O BISPO se deslocou %d casas na diagonal direita para cima\n", movimento_bispo);
-   
-    
-     //foi utilizado a função do-while para movimentação da Rainha
+     
+    //foi utilizado a função do-while para movimentação da Rainha
     
     printf("                ==============\n");
     printf("                ==<<RAINHA>>==\n");
@@ -53,7 +49,5 @@ int main (){
 
     } while (rainha < movimento_rainha);
     
-    printf("A RAINHA se deslocou %d casas para esquerda\n", movimento_rainha);
-
-    return 0;
+return 0;
 }
