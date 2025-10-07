@@ -68,11 +68,11 @@ int main (){
     //o loop interno será executado enquanto a condição de IF for vedadeira        
             for(j = 0; j < 5; j++)
             {
-                if(j % 2 == 0 && j != 0)
+                if(j % 2 == 0 && j != 0) //A condição imprime os números pares menores que 5
                 printf("CIMA\n");
             }
             printf("DIREITA\n");
-            break;
+            break; //O comando break encerra o fluxo
         }    
         
     printf("\nO CAVALO moveu em L para DIREITA/CIMA\n");
