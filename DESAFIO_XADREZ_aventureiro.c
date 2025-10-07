@@ -1,10 +1,6 @@
 #include <stdio.h>
 
 int main (){
-    int cavalo;
-    int movimento_cavalo;
-    
-
     printf("\n===============<<<Nivel Aventureiro>>>==========\n");
     printf("                ==============\n");
     printf("                ==<<CAVALO>>==\n");
@@ -12,18 +8,18 @@ int main (){
 
     //Atribuído valores às variáveis MOVIMENTO_CAVALO e CAVALO;
     //O movimento do cavalo se da em forma de L, para tanto o movimento deve ser descrito com dois movimentos para BAIXO e um para ESQUERDA. 
-  
-    cavalo = 1;
-    movimento_cavalo = 1; 
-printf("\n========== Loop aninhado WHILE ==========\n");  
-while (cavalo < 2)
+      
+    printf("\n========== Loop aninhado WHILE ==========\n");  
+    
+    int i = 0, j = 0;
+    while (i < 1)
     {
         //O loop interno imprime "BAIXO" e incrementa o valor da variável MOVIMENTO_CAVALO enquanto esta for menor ou igual a 2 (dois).
         //Sendo assim, será impresso a palavra "BAIXO" 2 (duas) vezes.
-        while (movimento_cavalo <= 2) 
+        while (j <= 1) 
     {
         printf("BAIXO\n");
-        movimento_cavalo++;
+        j++;
     }
         //Após a execução do loop interno, será executado o loop externo, em que será impresso a palavra"ESQUERDA",
         //enquanto o valor da variável CAVALO for menor que 2 (dois).
@@ -31,7 +27,7 @@ while (cavalo < 2)
         //a condição se torna falsa.
 
         printf("ESQUERDA\n"); 
-        cavalo++;
+        i++;
     }
    printf("\nCAVALO de move em L para BAIXO/ESQUERDA\n");
 
@@ -41,9 +37,9 @@ while (cavalo < 2)
     //a fim de demonstração desta possibilidade ao utilizar Loop Alinhado FOR.
     //Foi aplicada a mesma lógica do código anterior.
 
-    for(int cavalo = 1; cavalo < 2; cavalo++)
+    for(int i = 0; i < 1; i++)
     {
-        for (int movimento_cavalo = 1; movimento_cavalo <= 2; movimento_cavalo++)
+        for (int j = 0; j <= 1; j++)
         {
             printf("BAIXO\n");
         }

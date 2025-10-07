@@ -34,50 +34,47 @@ void moverRainha (int casaR)
 int main (){
     
     printf("\n===============<<<Nivel Mestre>>>==========\n");
-
     printf("\n     ==<<TORRE movimento recursivo>>==\n");
     
-
+    //basta acrescentar entre parenteses a quantidade de vezes que será impressa a variável
+    //neste caso moverTore será impressa 5 vezes.
     moverTorre(5);
     printf("\nA TORRE moveu 5 casas para DIREITA\n");
 
-//Para o movimento do Bispo utilizando a estrutura de Recursividade
 
-   printf("\n===========================================\n");
+
+    printf("\n===========================================\n");
 
     printf("       ==<<BISPO movimento recursivo>>==\n");
 
 
-   moverBispo(5);
-   printf("\nA BISPO moveu 5 casas para DIAGONAL DIREITA/CIMA\n");
+    moverBispo(5);
+    printf("\nA BISPO moveu 5 casas para DIAGONAL DIREITA/CIMA\n");
    
- printf("\n===========================================\n");
+    printf("\n===========================================\n");
  
- printf("         ==<<RAINHA movimento recursivo>>==\n");
+    printf("         ==<<RAINHA movimento recursivo>>==\n");
  
     
- moverRainha(8);
- printf("\nA RAINHA moveu 8 casas para ESQUERDA\n");
+    moverRainha(8);
+    printf("\nA RAINHA moveu 8 casas para ESQUERDA\n");
 
-printf("\n===========================================\n");
+    printf("\n===========================================\n");
 
-printf("     ==<<CAVALO movimento loop aninhado e complexo>>==\n");
-
+    printf("     ==<<CAVALO movimento loop aninhado e complexo>>==\n");
     int i, j;
-    
-    for(i = 0; i < 3; i++) // loop externo
-    {
-       for(j = 0; j < 3; j++) // loop interno
+        for (i = 0; i < 5; i++) 
         {
-        if(j >= 2) //se j for maior ou igual a 2 pula para a próxima iteração
-        continue; // pula o resto do loop interno
+    //o loop interno será executado enquanto a condição de IF for vedadeira        
+            for(j = 0; j < 5; j++)
+            {
+                if(j % 2 == 0 && j != 0)
+                printf("CIMA\n");
+            }
+            printf("DIREITA\n");
+            break;
+        }    
         
-        printf("CIMA\n"); //imprime CIMA nas primeiras iterações válidas
-        }
-    printf("DIREITA\n");
-    break; //sai do loop externo
-    }
-
     printf("\nO CAVALO moveu em L para DIREITA/CIMA\n");
 
 printf("\n======= FIM ======\n");    
